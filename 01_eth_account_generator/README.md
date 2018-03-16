@@ -2,12 +2,12 @@
 This simple app generates a private key and shows corresponding address with its balance. You might find an account which is owned by some rich guy. Unfortunately, [it is a bit difficult][how-difficult], though.
 
 ## Prerequisite
-- One of the two followings
+<!-- - One of the two followings
   - [Metamask][metamask] (It's easier)
   - Local Ethereum node on port 8545, which is attached to Ehtereum Mainnet
     - [Geth][geth]
     - [Parity][parity]
-    - or whatever
+    - or whatever -->
 - Node.js
   - I used `lite-server` for running it
 
