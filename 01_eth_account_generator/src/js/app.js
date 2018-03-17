@@ -41,7 +41,7 @@ App = {
   },
 
   createList: function() {
-      return App.showEntry();
+      App.showEntry();
   }
 
 }
