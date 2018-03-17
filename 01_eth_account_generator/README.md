@@ -17,7 +17,12 @@ $ npm install
 $ npm run dev
 ```
 
+## Demo
+[Github pages][demo-page]
+
 [how-difficult]: https://www.reddit.com/r/Bitcoin/comments/1rurll/on_the_subject_of_listing_all_possible_private/
 [metamask]:https://metamask.io/
 [geth]:https://github.com/ethereum/go-ethereum
 [parity]:https://github.com/paritytech/parity
+
+[demo-page]:https://santonychoi.github.io/enjoyable-solidity/01_eth_account_generator/src/index.html
