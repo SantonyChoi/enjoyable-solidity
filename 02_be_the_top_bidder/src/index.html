@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Test your luck - Ethereum account generator</title>
+
+  <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Ethereum Account Generator</a>
+    </div>
+  </nav>
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h4>
+          Game
+          <span id="current-game-id">#0</span>
+        </h4>
+        <p>
+          Game Reward:
+          <span id="current-game-reward">10</span>
+          ETH
+        </p>
+        <p>
+          Current Bid:
+          <span id="current-game-bid">0.5</span>
+          ETH
+        </p>
+        <p>
+          Time Remaining:
+          <span id="time-remaining">00:00</span>
+        </p>
+      </div>
+      <div class="col-sm-6">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Address</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          <tr>
+            <td>#1</td>
+            <td>0x000000</td>
+            <td>00:00</td>
+          </tr>
+          <tr>
+            <td>#1</td>
+            <td>0x000000</td>
+            <td>00:00</td>
+          </tr>
+          <tr>
+            <td>#1</td>
+            <td>0x000000</td>
+            <td>00:00</td>
+          </tr>
+          <tbody>
+            <tr>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 form-group">
+        <!-- <label for="bid-price">Bid Price</label> -->
+        <input type="text" class="form-control" id="bid-price"
+          onfocus="if (this.value=='Bidding Price Here') this.value='';"
+          onfocusout="if (this.value=='') this.value='Bidding Price Here';"
+          value="Bidding Price Here">
+      </div>
+      <div class="col-sm-6">
+        <button id="bid-btn" type="button" class="btn btn-primary btn-block">I Bid !</button>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h4>
+          Game
+          <span id="current-game-id">#0</span>
+        </h4>
+        <p>
+          Top Bidder:
+          <span id='previous-winner-1'>0x000000</span>
+        </p>
+        <p>
+          Game Reward:
+          <span id="previous-reward-1">10</span>
+          ETH
+        </p>
+        <p>
+          The Number of Players:
+          <span id="previous-players-1">10</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h4>
+          Game
+          <span id="current-game-id">#0</span>
+        </h4>
+        <p>
+          Top Bidder:
+          <span id='previous-winner-1'>0x000000</span>
+        </p>
+        <p>
+          Game Reward:
+          <span id="previous-reward-1">10</span>
+          ETH
+        </p>
+        <p>
+          The Number of Players:
+          <span id="previous-players-1">10</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h4>
+          Game
+          <span id="current-game-id">#0</span>
+        </h4>
+        <p>
+          Top Bidder:
+          <span id='previous-winner-1'>0x000000</span>
+        </p>
+        <p>
+          Game Reward:
+          <span id="previous-reward-1">10</span>
+          ETH
+        </p>
+        <p>
+          The Number of Players:
+          <span id="previous-players-1">10</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery/jquery.min.js"></script>
+<script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.rawgit.com/ethereumjs/keythereum/622b3a4b/dist/keythereum.min.js" type="text/javascript"></script>
+<script src="https://cdn.rawgit.com/ethereumjs/browser-builds/ddb27f8d/dist/ethereumjs-all/ethereumjs-all-2018-1-17.min.js" type="text/javascript"></script>
+<script src="https://cdn.rawgit.com/ethereum/web3.js/0.19.0/dist/web3.js" type="text/javascript"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
