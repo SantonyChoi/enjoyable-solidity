@@ -23,6 +23,9 @@ $ npm install
 $ npm run dev
 ```
 
+## Warning
+**You should play this game with a regular external account. Contract accounts can cause an unsuspected behaviour**
+
 ## Demo
 [Github pages][demo-page]
 
