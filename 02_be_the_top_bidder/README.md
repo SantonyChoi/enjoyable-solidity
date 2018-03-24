@@ -1,8 +1,7 @@
 # Be the Top Bidder
 This is a simple Ethereum game that has a couple rules.
-1. A game starts every 2 hours.
-2. A player who bids the most within a game will be a top bidder until a new player bids more. If the new bidder has a former bid, the player gets the former bid back.
-3. At the end of the game, a player who had been a top bidder for the longest minutes will win. The player get the reward. The accumulated bids become the next game's reward.
+1. A player who bids the most within a game will be a top bidder until a new player bids more. If the new bidder has a former bid, the player gets the former bid back.
+2. The top bidder can finish the game and get the reward 30 blocks after bidding transaction, by paying winning fee. The last bid by the top bidder will be a reward for the next game.
 
 As a master of the game, The owner of this `Game Contract` will get 1% of every bids as a fee.
 
@@ -24,7 +23,7 @@ $ npm run dev
 ```
 
 ## Warning
-**You should play this game with a regular external account. Contract accounts can cause an unsuspected behaviour**
+***You should play this game with a regular external account. Contract accounts can cause an unsuspected behaviour***
 
 ## Demo
 [Github pages][demo-page]
