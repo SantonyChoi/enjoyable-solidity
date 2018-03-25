@@ -51,7 +51,7 @@ contract BTTB is Pausable {
 
         msg.sender.transfer(records_[round_].reward);
 
-        startNewGame(this.balance);
+        startNewGame(address(this).balance);
     }
 
     function restartGame() public noContract whenNotPaused {
