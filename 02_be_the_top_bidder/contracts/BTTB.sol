@@ -29,6 +29,10 @@ contract BTTB is Pausable {
         startNewGame(0);
     }
 
+    function () public payable {
+        revert();
+    }
+
     function bid() public payable noContract whenNotPaused {
         require(msg.value > (records_[round_].lastBid * 110) / 100);
 
