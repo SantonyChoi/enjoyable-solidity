@@ -1,3 +1,5 @@
 node_modules
 /package*
 build
+*be_the_top_bidder
+*be_the_longest_bidder
