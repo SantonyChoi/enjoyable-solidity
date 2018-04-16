@@ -11,4 +11,14 @@ contract InsecureRandom {
         uint256 currentTimestamp = block.timestamp;
         return currentTimestamp * seed;
     }
+
+    // The two functions below are called in the order.
+    uint private betBlockNum_;
+    function setFutureRand() public {
+        betBlockNum_ = block.number;
+    }
+
+    function getFutreRand() public view returns (uint256) {
+        return uint256(block.blockhash(betBlockNum_));
+    }
 }
