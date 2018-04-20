@@ -5,8 +5,10 @@ contract PayDay {
     address public CFO_;
     address public COO_;
 
+    // id => account address
     mapping (uint => address) private idToAccount_;
-    mapping (address => uint) private balances_;
+    // id => remaining pay balance
+    mapping (uint => uint) private balances_;
 
     function PayDay() public {
 
@@ -20,8 +22,10 @@ contract PayDay {
 
     }
 
-    function withdraw() public {
-
+    function withdraw(uint id, uint amount) public {
+        require(msg.sender == idToAccount_[id]);
+        require(amount <= balances_[id]);
+        msg.sender.transfer(amount);
     }
 
     function changeAccount() public {
