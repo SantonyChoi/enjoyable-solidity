@@ -10,9 +10,3 @@ This repository is mainly for my personal interest. We will learn Solidity with 
 3. Push your branch to your own repo
 4. Make a Pull Request
 5. I will quickly review your contribution, enjoyably!
-
-## Demo page
-[Github pages][demo-page]
-
-
-[demo-page]:https://santonychoi.github.io/enjoyable-solidity/
