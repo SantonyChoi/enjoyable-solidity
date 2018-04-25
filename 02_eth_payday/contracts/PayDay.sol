@@ -18,8 +18,8 @@ contract PayDay {
         revert();
     }
 
-    function pay() public {
-
+    function pay(uint id, uint amount) public payable {
+        balances_[to] += amount;
     }
 
     function withdraw(uint id, uint amount) public {
@@ -28,7 +28,10 @@ contract PayDay {
         msg.sender.transfer(amount);
     }
 
-    function changeAccount() public {
-
+    // It would be good to add grant and receive logic here
+    function changeAccount(uint id, uint newAddress) public {
+        require(msg.sender == idToAccount_[id]);
+        require(balances_[id] == 0);
+        idToAccount_[id] = newAddress;
     }
 }
