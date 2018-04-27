@@ -14,12 +14,27 @@ contract PayDay {
 
     }
 
+    modifier onlyCEO() {
+        require(msg.sender == CEO_);
+        _;
+    }
+
+    modifier onlyCFO() {
+        require(msg.sender == CFO_);
+        _;
+    }
+
+    modifier onlyCOO() {
+        require(msg.sender == COO_);
+        _;
+    }
+
     function () public payable {
         revert();
     }
 
     function pay(uint id, uint amount) public payable {
-        balances_[to] += amount;
+        balances_[id] += amount;
     }
 
     function withdraw(uint id, uint amount) public {
@@ -29,7 +44,7 @@ contract PayDay {
     }
 
     // It would be good to add grant and receive logic here
-    function changeAccount(uint id, uint newAddress) public {
+    function changeAccount(uint id, address newAddress) public {
         require(msg.sender == idToAccount_[id]);
         require(balances_[id] == 0);
         idToAccount_[id] = newAddress;
