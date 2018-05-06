@@ -29,6 +29,18 @@ contract PayDay {
         _;
     }
 
+    function setCEO(address newCEO) onlyCEO public {
+        CEO_ = newCEO;
+    }
+
+    function setCOO(address newCOO) onlyCEO public {
+        COO_ = newCOO;
+    }
+
+    function setCFO(address newCFO) onlyCEO public {
+        CFO_ = newCFO;
+    }
+
     function () public payable {
         revert();
     }
